@@ -1,0 +1,10 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+}

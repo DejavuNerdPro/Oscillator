@@ -7,11 +7,36 @@
   <link rel="stylesheet" href="css/decorator.css"/>
 </head>
 <body>
-  <h1>Web Audio API Example</h1>
+    <section class="content">
+        <div class="container-fluid">
+            
+            <div class="justify-content-center">
+                
+                <div class="card container-fluid p-0">
+                    <div class="card-header p-0 pt-3"><br></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <label for="volume">Volume:</label><br/>
+                                <div class="offset-md-3 text-center"><input type="range" id="volume" min="0" max="1" step="0.01" value="0.5"/></div>
+                                <br/>
+                                <label for="frequency">Frequency:</label>
+                                <input type="range" id="frequency" min="20" max="2000" step="1" value="440">
+                                <span id="frequencyDisplay">440</span> Hz
+                                <hr/>
+                                <button id="startButton" class="btn-primary">Start Audio</button>
+                                <button id="stopButton" class="btn-primary">Stop Audio</button><br/>
+                                <canvas id="frequencyCanvas" width="800" height="200"></canvas>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
   
-  <label for="volume">Volume:</label>
-  <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
-  
-  <script src="script/oscillator.js"></script>
+<script src="script/oscillator.js"></script>
 </body>
 </html>
